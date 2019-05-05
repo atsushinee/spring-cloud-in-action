@@ -1,0 +1,14 @@
+server:
+  port: 1111
+eureka:
+  instance:
+    hostname: peer1
+    appname: server
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://peer2:1112/eureka/
+spring:
+  application:
+    name: server
